@@ -1,0 +1,41 @@
+<div class="spinner" *ngIf="loadingState; else contactlist">
+  <mat-spinner></mat-spinner>
+  </div>
+  <ng-template class="contactlist" #contactlist>
+      <nav>
+          <a routerLink="/projectlist" routerLinkActive="active">Project List</a>        
+        </nav>
+        <nav>
+            <a routerLink="/selectionlist" routerLinkActive="active">Selection List</a>        
+          </nav>
+    <h2 style="text-align: center;">Contact List</h2>
+    <div class="contactlist-container mat-elevation-z8">
+      <div><button title="Create" mat-raised-button color="accent" (click)="addContact()">Create</button></div>
+      <table mat-table #table [dataSource]="dataSource">       
+  
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Name </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="message">
+            <th mat-header-cell *matHeaderCellDef> Message </th>
+            <td mat-cell *matCellDef="let element"> {{element.message}} </td>
+          </ng-container>
+  
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef> Action </th>
+          <td mat-cell *matCellDef="let element">
+            <button title="Edit" mat-raised-button color="primary" (click)="editContact(element.id)">Edit</button>
+            <button title="Delete" mat-raised-button color="warn" (click)="deleteContact(element.id)">Delete</button>
+          </td>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+  
+    </div>
+  </ng-template>
+  

@@ -1,0 +1,14 @@
+E:\repos\projectcontact-app\bin\Debug\netcoreapp2.1\projectcontact-app.deps.json
+E:\repos\projectcontact-app\bin\Debug\netcoreapp2.1\projectcontact-app.runtimeconfig.json
+E:\repos\projectcontact-app\bin\Debug\netcoreapp2.1\projectcontact-app.runtimeconfig.dev.json
+E:\repos\projectcontact-app\bin\Debug\netcoreapp2.1\projectcontact-app.dll
+E:\repos\projectcontact-app\bin\Debug\netcoreapp2.1\projectcontact-app.pdb
+E:\repos\projectcontact-app\obj\Debug\netcoreapp2.1\projectcontact-app.csprojAssemblyReference.cache
+E:\repos\projectcontact-app\obj\Debug\netcoreapp2.1\projectcontact-app.csproj.CoreCompileInputs.cache
+E:\repos\projectcontact-app\obj\Debug\netcoreapp2.1\projectcontact-app.RazorAssemblyInfo.cache
+E:\repos\projectcontact-app\obj\Debug\netcoreapp2.1\projectcontact-app.RazorAssemblyInfo.cs
+E:\repos\projectcontact-app\obj\Debug\netcoreapp2.1\projectcontact-app.AssemblyInfoInputs.cache
+E:\repos\projectcontact-app\obj\Debug\netcoreapp2.1\projectcontact-app.AssemblyInfo.cs
+E:\repos\projectcontact-app\obj\Debug\netcoreapp2.1\projectcontact-app.RazorTargetAssemblyInfo.cache
+E:\repos\projectcontact-app\obj\Debug\netcoreapp2.1\projectcontact-app.dll
+E:\repos\projectcontact-app\obj\Debug\netcoreapp2.1\projectcontact-app.pdb

@@ -1,0 +1,34 @@
+<form  (ngSubmit)="onSubmit(selectionFrm)"  [formGroup]="selectionFrm">
+    <h2>{{data.modalTitle}}</h2>
+    <div>
+        <mat-form-field appearance="outline">
+          <mat-select placeholder="Select a Project" formControlName="project">
+            <mat-option>-- None --</mat-option>
+            <mat-option *ngFor="let project of projects" [value]="project">
+              {{ project }}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="formErrors.project ">
+            {{ formErrors.project }}
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div>
+          <mat-form-field appearance="outline">
+            <mat-select placeholder="Select a Contact" formControlName="contact">
+              <mat-option>-- None --</mat-option>
+              <mat-option *ngFor="let contact of contacts" [value]="contact">
+                {{ contact }}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="formErrors.contact ">
+              {{ formErrors.contact }}
+            </mat-error>
+          </mat-form-field>
+        </div>
+    <div>  
+        <button type="button" mat-raised-button color="warn" (click)="dialogRef.close()">Cancel</button>&nbsp;
+        <button type="submit" mat-raised-button color="primary" [disabled]="selectionFrm.invalid">{{data.modalBtnTitle}}</button>
+      </div>
+</form>
